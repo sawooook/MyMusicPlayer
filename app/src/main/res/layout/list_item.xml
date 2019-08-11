@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whirecolor"
+    android:paddingTop="@dimen/marginSize"
+    android:paddingBottom="@dimen/marginSize"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_music_img"
+        android:layout_width="@dimen/itemIconSize"
+        android:layout_height="@dimen/itemIconSize"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:src="@drawable/logo"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/marginSize">
+        <TextView
+            android:id="@+id/tv_music_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/blackcolor"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="노래제목"/>
+
+        <TextView
+            android:id="@+id/tv_music_author"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="아티스트"
+            android:textColor="@color/blackcolor"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ToggleButton
+        android:id="@+id/iv_play"
+        android:layout_width="@dimen/itemPlaySize"
+        android:layout_height="@dimen/itemPlaySize"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:layout_marginRight="@dimen/marginSize"
+        android:background="@drawable/button_favorite"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+    </LinearLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_play2"-->
+    <!--android:layout_width="@dimen/itemPlaySize"-->
+    <!--android:layout_height="@dimen/itemPlaySize"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_marginLeft="@dimen/marginSize"-->
+    <!--android:layout_marginRight="@dimen/marginSize"-->
+    <!--android:background="@drawable/ic_favorite" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_play"-->
+        <!--android:layout_width="@dimen/itemPlaySize"-->
+        <!--android:layout_height="@dimen/itemPlaySize"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:visibility="visible"-->
+        <!--android:layout_marginLeft="@dimen/marginSize"-->
+        <!--android:layout_marginRight="@dimen/marginSize"-->
+        <!--android:background="@drawable/ic_favorite_border" />-->
+
+
+</LinearLayout>

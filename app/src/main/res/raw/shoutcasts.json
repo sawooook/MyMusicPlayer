@@ -1,0 +1,27 @@
+[
+  {
+    "name" : "BBS 불교방송",
+    "player": "rtmp",
+    "stream" : "rtmp://bbslive.clouducs.com/bbsradio-mlive/livestream"
+  },
+  {
+    "name": "EBS FM",
+    "player": "hls",
+    "stream": "http://ebsonairiosaod.ebs.co.kr/fmradiobandiaod/bandiappaac/playlist.m3u8"
+  },
+  {
+    "name": "국악방송",
+    "player" : "rtmp",
+    "stream": "rtmp://mgugaklive.nowcdn.co.kr/gugakradio/gugakradio.stream"
+  },
+  {
+    "name": "CBS 표준 FM",
+    "player" : "hls",
+    "stream": "http://aac.cbs.co.kr/cbs939/cbs939.stream/playlist.m3u8"
+  },
+  {
+    "name" : "BBC 라디오",
+    "player": "default",
+    "stream" : "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk"
+  }
+]

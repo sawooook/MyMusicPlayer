@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.login_activity">
+    <!-- <uses-permission android:name="android.permission.RECORD_AUDIO"/> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.nfc.reac_activity"></activity>
+        <activity android:name="com.example.nfc.nfc_test_Activity" />
+        <activity android:name="com.example.qr.Qrcode_recommanded_Activity" />
+        <activity android:name="com.example.qr.Qrcode_scan_Activity" />
+        <activity android:name="com.example.music_lyricis.Music_detail_information_Activity" />
+        <activity android:name=".qrtest">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/kakaolink_host"
+                    android:scheme="@string/kakao_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name="com.example.music_lyricis.recommanded_Activity" />
+        <activity android:name="com.example.music_lyricis.Music_lyrics_recommandation" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <activity
+            android:name="com.example.drawar.DrawAR"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.drawar.LoadingActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.radio.MyMusic_Activity" />
+
+        <service android:name="com.example.radio.player.RadioService" />
+
+        <activity
+            android:name="com.example.radio.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Music_Buy_Activity" />
+        <activity android:name=".test_activity" />
+        <activity android:name=".Buy_point_Activity" />
+        <activity android:name=".kakao_Activity" />
+        <activity android:name=".MyPage_Activity" />
+        <activity android:name=".Login_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name="com.example.simplemusicplayer.activities.MainActivity" />
+        <activity android:name="com.example.simplemusicplayer.activities.MusicListActivity" />
+        <activity android:name="com.example.simplemusicplayer.activities.WelcomeActivity" />
+
+        <receiver android:name="android.support.v4.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
