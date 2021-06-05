@@ -19,7 +19,7 @@
 + 주변에 나오는 노래 소리를 듣고, 서버에 저장된 노래중 비슷한 노래를 검색해주는 기능합니다.
 
 ## 사용 기술
-Language: Java, Python
-FrameWork : Falsk
-WebServer : Nginx
-DataBase : PostgreSQL
++ Language: Java, Python
++ FrameWork : Falsk
++ WebServer : Nginx
++ DataBase : PostgreSQL
